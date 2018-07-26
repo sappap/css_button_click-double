@@ -1,0 +1,97 @@
+<! consist of 1.html open and closd html tag, 2.head and 3.body>
+<! use for comments in html>
+<!--inside 'div' gave classname which is in '#510505body' tag, and defined class name in 'style' which is inside 'head' tag-->
+
+
+<!--div is a block elements/box and you can add pargarph inside block elements -->
+<!DOCTYPE html>
+<html>
+    
+   <head>
+       <meta charset="utf-8">  <!self enclosed tag>
+       <title>internal css </title>
+       
+       <style>
+      
+           .bluebox{
+/*               .bluebox classname defined*/
+               background-color: blue;
+               color: white;   
+/*             facebook text color is white*/
+               height: 100px;
+               width: auto
+               
+               
+           }
+           
+           
+           .yellowbox{
+/*               .yellowbox classname defined*/
+               background-color: green;
+               color: red;
+/*             Apple text color is white*/
+               height: 100px;
+               width: auto
+               
+               
+           }
+           
+           
+           
+       </style>
+       
+<!--       here 'p' stands for paragraph which is inside 'style' open and close tag-->
+    
+   </head>
+    
+    
+    
+    <body>
+        
+        <div class="bluebox" id="facebook">  <!--classname with id-->
+            
+        <p>Facebook</p> <!--pargraph-->
+        
+        </div>
+<!--    div box closed-->
+        
+        <div class="yellowbox" id="apple">  <!--classname with id-->
+            
+        <p>Apple</p> 
+               
+       </div> 
+        
+<!--        div box closed-->
+        
+        <button id="button1"> Change content of facebook </button>
+        <button id="button2"> Change content of apple </button>
+  
+        <script>
+            
+//            inside java script tag
+            
+            document.getElementById("button1").ondblclick = function(){
+                
+                document.getElementById("facebook").innerHTML =
+                    "<p> Facebook has lots of user</p>";
+                
+//                on double click it will change inner html content
+                
+            }
+                 document.getElementById("button2").onclick = function(){
+                
+                document.getElementById("apple").innerHTML =
+                    
+                    "<ul><li>BMW</li><li>I10</li><li>Nissan</li></ul>";
+                  
+//             on single click it will chnage inner html content       
+                
+                 }
+        
+      </script>
+            
+             
+    
+    </body>
+
+</html>
